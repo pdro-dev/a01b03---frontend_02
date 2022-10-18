@@ -17,7 +17,25 @@
     <h1>Front-end II - Mesa 01</h1>
     <p>Atividade para criar script básico, percorrendo um array de números e somando todos os elementos.</p>
     <p>Colocar esse script numa página HTML e rodar no navegador para verificar o resultado.</p>
-    <p>Apresentar a atividade num repositório github</p>
+    <p>Apresentar a atividade num repositório github.</p>
     <p>Participantes: <strong>Vanessa Bressan, Matheus Galvão, Igor Matos, Pedro Simões</strong></p>
+    <!-- mostrar numeros do array do script com span-->
+    <p>Array fixo no script: <span id="numeros"></span></p>
+    <!-- apresentar resultado do script -->
+    <p>Resultado: <span><strong id="resultado"></strong></span></p>
+
+
+    <!-- campo formulario para inserir numeros inteiros e enviar valor inserido para o index.js -->
+
+    <form action="index.js">
+        <label for="num">Inserir números inteiros separados por vírgula:</label>
+        <input type="text" id="numeros2" name="numeros2">
+        <input type="submit" value="Enviar">
+
+    <!-- mostrar numeros do array do script com span-->
+    <p>Array inserido pelo usuário: <span id="numerosInseridos"></span></p>
+    <!-- apresentar resultado do script -->
+    <p>Resultado: <span><strong id="resultado2"></strong></span></p>
+
 </body>
 </html>

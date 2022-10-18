@@ -4,13 +4,41 @@ Depois, temos que pegar este resultado e somar o terceiro número, e assim por d
 */
 
 // Array de números
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numeros = [1, 2, 4, 8];
 // Variável que irá armazenar o resultado
 let resultado = 0;
-// Percorrendo o array
-for (let i = 0; i < numeros.length; i++) {
-  // Somando o resultado com o número atual
-  resultado += numeros[i];
-  // Imprimindo o resultado
-  console.log(resultado);
+
+
+function somarArray(array) {
+  let soma = 0;
+  for (let i = 0; i < array.length; i++) {
+    soma += array[i];
+  }
+  return soma;
 }
+
+// chamada da função com o array de números fixos
+resultado = somarArray(numeros);
+
+
+// escrever o array de números no html com id="numeros"
+document.getElementById("numeros").innerHTML = numeros;
+// escrever o resultado no arquivo index.html com o id resultado
+document.getElementById("resultado").innerHTML = resultado;
+
+
+
+// receber o string de números do usuário e transformar em array
+let numerosInseridos = document.getElementById("numeros2").value.split(",");
+
+// chamada da função com o array de números inseridos pelo usuário
+let resultado2 = somarArray(numerosInseridos);
+
+// escrever o array de números inseridos pelo usuário no html com id="numerosInseridos"
+document.getElementById("numerosInseridos").innerHTML = numerosInseridos;
+
+// escrever o resultado no arquivo index.html com o id resultado2
+document.getElementById("resultado2").innerHTML = resultado2;
+
+
+

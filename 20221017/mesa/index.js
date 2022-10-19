@@ -20,6 +20,7 @@ function somarArray(array) {
 // chamada da função com o array de números fixos
 resultado = somarArray(numeros);
 
+/* alert(resultado); */
 
 // escrever o array de números no html com id="numeros"
 document.getElementById("numeros").innerHTML = numeros;

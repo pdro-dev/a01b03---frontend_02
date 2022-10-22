@@ -6,12 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- conectar script index.js com defer-->
-    <script src="index.js" defer></script>
+    <!-- conectar script index.js type module -->
+    <script src="./js/main.js" type="module" defer></script>
 
 
 </head>
 <body>
-    
+    <!-- texto de boas vindas e orientações para o jogo Pedra-Papel-Tesoura -->
+    <h2>Olá ...</h2>
+    <!-- Descreve regras basicas -->
+    <h4>Regras básicas do jogo:</h4>
+    <h5>
+        <ul>
+            <li>Pedra ganha de Tesoura.</li>
+            <li>Tesoura ganha de Papel.</li>
+            <li>Papel ganha de Pedra.</li>
+        </ul>
+    </h5>
+    <!-- radios buttons to select game mode -->
+    <!-- <div>
+        <h4>Selecione o modo de jogo:</h4>
+        <h5>
+            <form>
+                <input type="radio" id="numRodadas" name="gameMode" value=1>
+                <label for="single">Número de Partidas </label><br>
+                <input type="radio" id="pontos" name="gameMode" value=2>
+                <label for="multi">Pontuação</label><br>
+            </form>
+        </h5>
+    </div>
+    <p></p> -->
+    <!-- criar botao start com id start -->
+    <button id="start">Start</button>
+
+    <!--  -->
+    <!-- Apresentar atividade -->
+    <h6><strong>Descrição da atividade:</strong></h6>
+    <div>
+        <h6>Jogo de Pedra, Papel ou Tesoura<h6>
+        <h6>Prática Integradora</h6>
+        <h6>Programaremos um pequeno jogo de Pedra, Papel ou Tesoura.</h6>  
+        <h6>Neste jogo o usuário poderá escolher entre uma das três opções e o computador escolherá aleatoriamente uma das três opções, essas opções serão então comparadas e no final será mostrado quem ganhou e quem perdeu a disputa.</h6>
+
+        <h6>Para fazer essa atividade é importante lembrar das regras básicas deste jogo:</h6>
+        <h6>
+            <ul>
+                <li>1. Pedra ganha de Tesoura.</li>
+                <li>2. Tesoura ganha de Papel.</li>
+                <li>3. Papel ganha de Pedra.</li>
+            </ul>
+        </h6>
+
+
+        <h6>Desafio - Mesas de Trabalho</h6>
+        <h6>Após termos as regras e o sistema com uma partida do jogo, ficará ao encargo das mesas
+        de trabalho:</h6>
+        <h6>
+            <ul>
+                <li>1. Implementar uma regra de que só é declarado como ganhador, quem ganhou 2 rodadas, para auxiliar use uma variável para armazenar o vencedor de cada rodada;</li>
+                <li>2. Empate no jogo, não dá pontuação para nenhum dos jogadores.</li>
+                <li>3. Tente utilizar funções e a estrutura de decisão switch em seu código;</li>
+                <li>4. Comente o código e utilize qualquer outro recurso para deixá-lo melhor formatado.</li>
+            </ul>
+        </h6>
+    </div>
+
 </body>
+<!-- footer com os nomes dos integrantes da mesa -->
+<footer>
+    <!-- Certified Tech Developer - CTD -->
+    <h6>Certified Tech Developer - CTD - Digital House - DH</h6>
+    <h6>Integrantes da mesa: frontend II - 20221018</h6>
+    <!-- lista de integrantes -->
+    <ul>
+        <li>Leticia Gonçalvez</li>
+        <li>Caio Nunes</li>
+        <li>Vanessa dos Santos</li>
+        <li>Jhony Joaquim</li>
+        <li>Pedro Simões</li>
+    </ul>
+</footer>
 </html>

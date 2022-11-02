@@ -142,7 +142,7 @@ let count = 0;
 input.addEventListener('keyup', () => {
     p.innerText = input.value;
     count += 1;
-    p.innerText += ` (${count}` + ' caracteres)';
+    p.innerText += '\n' + `(${count}` + ' teclas pressionadas)';
 });
 
 

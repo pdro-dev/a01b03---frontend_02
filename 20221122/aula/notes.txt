@@ -1,0 +1,11 @@
+https://www.freecodecamp.org/news/javascript-es6-promises-for-beginners-resolve-reject-and-chaining-explained/
+
+
+https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2#:~:text=Promises%20s%C3%A3o%20um%20padr%C3%A3o%20de,maioria%20das%20fun%C3%A7%C3%B5es%20usavam%20callbacks.
+
+
+(ARQUIVO PROJETO DE ENTREGA DA MESA)
+https://drive.google.com/file/d/1RzL6K4jPJg0p7ZVJg7coeeXLo-u5F4SO/view
+
+
+

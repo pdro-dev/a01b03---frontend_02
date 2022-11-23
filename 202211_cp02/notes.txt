@@ -1,0 +1,17 @@
+Links de referência para o projeto:
+
+
+
+Disponível no google drive:
+
+https://drive.google.com/file/d/1ioUwlmPkWQP-olMPFhFwufaGQoO-85_P/view?usp=sharing
+
+
+Disponível no GitHub:
+
+https://github.com/PedagogiaDHBrasil/DH-FrontEnd2-ToDoApp-ProjetoBase
+
+
+GitHub da turma:
+
+https://github.com/pss-ctd/DH_Turma2_N2_BI1022_FrontEnd2/tree/main

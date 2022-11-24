@@ -90,6 +90,7 @@ consultandoBaseDeDados
 
     });
 
+
 function renderizarDadosUsuario(dados) {
     /* -------------------------------- TAREFAS -------------------------------- */
     // Aqui  devem desenvolver uma função que é exibida na tela:
@@ -114,7 +115,26 @@ function renderizarDadosUsuario(dados) {
     card.appendChild(nome);
     card.appendChild(email);
 
+    // 4. Inserir o card no HTML.
     document.querySelector(".tarjeta").appendChild(card);
+
+    // 5. Estilizar o card.
+    card.style.borderRadius = "20px";
+    card.style.padding = "10px";
+    card.style.display = "flex";
+    card.style.flexDirection = "column";
+    card.style.alignItems = "center";
+    card.style.justifyContent = "center";
+
+    foto.style.width = "100px";
+    foto.style.height = "100px";
+    foto.style.borderRadius = "50%";
+    foto.style.objectFit = "cover";
+    foto.style.marginBottom = "10px";
+
+    nome.style.margin = "0";
+    nome.style.padding = "0";
+    nome.style.textAlign = "center";
 
 }
 

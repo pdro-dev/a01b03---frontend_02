@@ -11,6 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    border-radius: 20px;
 }
 
 body{
@@ -30,4 +31,8 @@ h1{
   height: 200px;
   width: 50%;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

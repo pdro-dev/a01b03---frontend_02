@@ -5,7 +5,8 @@ fetch('https://randomuser.me/api/')
     })
     .then(data => {
         //manipulamos a resposta
-        console.log(data)
+        renderizarDadosUsuario(data);
+        console.log(data);
     });
 
 function renderizarDadosUsuario(dados) {
@@ -13,6 +14,51 @@ function renderizarDadosUsuario(dados) {
     // Aqui devem desenvolver uma função que seja exibida na tela:
     // a foto, o nome completo do usuário e o e-mail.
     // Isto deve ser baseado nas informações que obtemos da API e inseridas no HTML.
+    // Dica: utilize o console.log() para verificar o que está recebendo da API.
+    /* ------------------------------------------------------------------------ */
+
+    // Obtem o elemento HTML (class="card") que irá receber os dados da API
+    const card = document.querySelector('.card');
+
+    // Cria um elemento HTML (img) para receber a foto do usuário
+    const img = document.createElement('img');
+    // Set id do elemento
+    img.id = 'foto';
+
+    // Cria um elemento HTML (h1) para receber o nome completo do usuário
+    const h1 = document.createElement('h1');
+    // Set id do elemento
+    h1.id = 'nome';
+
+    // Cria um elemento HTML (p) para receber o e-mail do usuário
+    const p = document.createElement('p');
+    // Set id do elemento
+    p.id = 'email';
+
+    // Adiciona os elementos criados ao elemento HTML (class="card")
+    card.appendChild(img);
+    card.appendChild(h1);
+    card.appendChild(p);
+
+    // Obtem o elemento HTML (id="foto") que irá receber a foto do usuário
+    const foto = document.querySelector('#foto');
+    // Set src do elemento
+    foto.src = dados.results[0].picture.large;
+
+    // Obtem o elemento HTML (id="nome") que irá receber o nome completo do usuário
+    const nome = document.querySelector('#nome');
+    // Set textContent do elemento
+    nome.textContent = `${dados.results[0].name.first} ${dados.results[0].name.last}`;
+
+    // Obtem o elemento HTML (id="email") que irá receber o e-mail do usuário
+    const email = document.querySelector('#email');
+    // Set textContent do elemento
+    email.textContent = dados.results[0].email;
+
+
+
+
+
 }
 
 

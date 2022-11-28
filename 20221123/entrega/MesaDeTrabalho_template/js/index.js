@@ -55,9 +55,11 @@ function renderizarDadosUsuario(dados) {
     // Set textContent do elemento
     email.textContent = dados.results[0].email;
 
-
-
-
+    // alinhar os elementos criados ao centro
+    card.style.textAlign = 'center';
+    // centralizar imagem
+    foto.style.margin = 'auto';
+    
 
 }
 
@@ -66,3 +68,21 @@ function renderizarDadosUsuario(dados) {
 // Aqui você pode ir para o ponto extra de usar o botão que está comentado no HTML.
 // Você pode descomentar o código no index.html e usar esse botão para executar uma nova solicitação API, sem recarregar a página.
 // Cabe aos desenvolvedores decidirem qual bloco de código deve ser contido dentro de uma função para que ele possa ser executado toda vez que um clique de botão for realizado.
+
+// obtem o elemento HTML (id="btn") que irá executar uma nova solicitação API
+const btn = document.querySelector('#random');
+// adiciona um evento de clique ao elemento HTML (id="random")
+btn.addEventListener('click', () => {
+    // clear card content
+    document.querySelector('.card').innerHTML = '';
+    // chama a função que realiza uma nova solicitação API
+    fetch('https://randomuser.me/api/')
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            //manipulamos a resposta
+            renderizarDadosUsuario(data);
+            console.log(data);
+        });
+});
